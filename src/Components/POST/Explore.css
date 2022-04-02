@@ -1,0 +1,106 @@
+.explore_section {
+  position: relative;
+  top: 70px;
+  width: 100vw;
+  height: 100vh;
+}
+.post_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+.post_div > div img {
+  height: 300px;
+  width: 300px;
+}
+.post_article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explore_load {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explore_load .l_icon {
+  color: grey;
+}
+.explore_section article:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explore_section .tabs {
+  width: 932px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.explore_section .tabs button,
+.explore_section .tabs input {
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 0.5px 0.5px grey;
+  padding: 5px 15px;
+}
+.explore_section .tabs input:focus {
+  background-color: rgb(244, 231, 255);
+}
+.explore_section .tabs button:hover {
+  background-color: rgb(233, 208, 255);
+}
+.explore_section .tabs button:active {
+  background-color: var(--main-color);
+  color: white;
+}
+.post_div > div {
+  box-shadow: 0px 0px 0.5px 0.5px grey;
+}
+@media screen and (max-width: 920px) {
+  .post_div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 6px;
+    gap: 2px;
+  }
+  .post_div > div {
+    flex-basis: 32%;
+    width: auto;
+    height: calc(32vw);
+    box-shadow: 0px 0px 0.5px 0.5px grey;
+  }
+  .post_div > div img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .tabs {
+    overflow-x: scroll;
+    padding: 10px;
+    margin-bottom: 0px;
+  }
+  .tabs::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  .tabs > div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .explore_section .tabs button,
+  .explore_section .tabs input {
+    font-size: 10px;
+  }
+}

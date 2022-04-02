@@ -1,0 +1,15 @@
+.loading-icon {
+  display: inline-block;
+}
+.loading-icon .icon {
+  animation: load 0.4s ease-in infinite;
+  color: rgb(151, 151, 151);
+}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

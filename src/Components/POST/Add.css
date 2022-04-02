@@ -1,0 +1,84 @@
+.post_image_section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post_image_section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: 0px 0px 0.5px 0.5px grey;
+  width: 400px;
+}
+.post_image_section div {
+  width: 100%;
+}
+.danger {
+  width: 100%;
+  color: red;
+  background-color: rgb(255, 231, 231);
+  padding: 5px;
+  margin: 1rem 0;
+  box-shadow: 0px 0px 0.5px 0.5px red;
+  text-align: center;
+}
+.success {
+  width: 100%;
+  color: green;
+  background-color: rgb(197, 255, 197);
+  padding: 5px;
+  margin: 1rem 0;
+  box-shadow: 0px 0px 0.5px 0.5px green;
+  text-align: center;
+}
+
+.post_image_section div input {
+  width: 100%;
+  box-shadow: 0px 0px 0.5px 0.5px grey;
+  padding: 10px;
+}
+.post_image_section textarea {
+  width: 100%;
+  height: 100px;
+  margin: 1rem 0;
+  resize: none;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 0.5px 0.5px rgb(73, 73, 73);
+  padding: 10px;
+}
+.post_image_section textarea:focus {
+  box-shadow: 0px 0px 0.5px 0.5px var(--main-color);
+}
+.post_image_section button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 4px 30px;
+  font-size: 1.1rem;
+}
+.post_image_section button:hover {
+  background-color: var(--hover-button);
+}
+@media screen and (max-width: 420px) {
+  .post_image_section form {
+    width: 90%;
+  }
+  .post_image_section div input {
+    font-size: 0.7rem;
+  }
+  .post_image_section textarea {
+    font-size: 10px;
+  }
+  .post_image_section button {
+    font-size: 0.9rem;
+  }
+  .post_image_section form {
+    padding: 1rem;
+  }
+}

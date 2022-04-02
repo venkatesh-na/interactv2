@@ -1,0 +1,77 @@
+.verify-email {
+  position: relative;
+  top: 120px;
+  left: 10vw;
+}
+.verify-email h1 {
+  color: var(--head-color);
+}
+.verify-email a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--main-color);
+  padding: 5px 30px;
+}
+.err-message {
+  display: inline-block;
+  position: relative;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.err-message h1 {
+  background-color: rgb(255, 246, 246);
+  color: rgb(255, 85, 85);
+  padding: 10px;
+  box-shadow: 0px 0px 0.3px 0.3px red;
+}
+.loading-component {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invalid_message_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invalid_message_container div p {
+  color: rgb(172, 134, 13);
+  background-color: rgb(255, 247, 221);
+  box-shadow: 0px 0px 0.5px 0.5px rgb(172, 134, 13);
+  padding: 5px 15px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.invalid_message_container div a {
+  padding: 5px 15px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: white;
+}
+.invalid_message_container div a:hover {
+  background-color: var(--hover-button);
+}
+@media screen and (max-width: 400px) {
+  .verify-email {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .verify-email h1 {
+    margin-bottom: 10px;
+  }
+  .verify-email a {
+    padding: 2px 20px;
+  }
+  .err-message {
+    width: 90%;
+  }
+  .err-message h1 {
+    font-size: 1rem;
+  }
+}
